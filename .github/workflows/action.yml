@@ -5,6 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: pip3 install pytest
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: pytest test_pipeline_data.py
